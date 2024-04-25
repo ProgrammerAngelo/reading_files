@@ -9,5 +9,12 @@ while proceed:
         my_life_output.write(break_line)
 #add an input for lines
         while proceed:
-            repeat = input("Are there any more lines y/n? \n")
 #add a method that ask the user y or n
+            repeat = input("Are there any more lines yes/no? \n")
+            if repeat.lower() == "yes":
+                break
+            elif repeat.lower() == "no":
+                proceed = False
+            else:
+                print("Invalid, type yes/no only bro!")
+                continue
