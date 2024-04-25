@@ -15,3 +15,6 @@ def find_highest_GWA(path):
                 students_highest_GWA = key
                 highest_GWA = value
         return students_highest_GWA, highest_GWA
+
+key, value = find_highest_GWA(path)
+print(f"{key}Has a Highest GWA with the value of{value}")
