@@ -13,7 +13,7 @@ print(YELLOW + font.renderText("Hello User") + RESET)
 
 proceed = True
 while proceed:
-    line = input(BRIGHT_CYAN + BACKGROUND_BLACK + "\n Enter line: \n" + RESET)
+    line = input(BRIGHT_CYAN + BACKGROUND_BLACK + "\nEnter line: \n" + RESET)
     break_line = line+("\n")
 #add a method for looping text
     with open("my_life.txt", "a") as my_life_output:
@@ -21,11 +21,11 @@ while proceed:
 #add an input for lines
         while proceed:
 #add a method that ask the user y or n
-            repeat = input("\n"+ GREEN+BACKGROUND_BLACK +"Are there any more lines yes/no? \n"+RESET)
+            repeat = input(GREEN + BACKGROUND_BLACK +"\nAre there any more lines yes/no? \n" + RESET)
             if repeat.lower() == "yes":
                 break
             elif repeat.lower() == "no":
                 proceed = False
             else:
-                print(RED+BACKGROUND_BLACK+"\nInvalid, type yes/no only bro!"+ RESET)
+                print(RED + BACKGROUND_BLACK + "\nInvalid, type yes/no only bro! \n" + RESET)
                 continue
