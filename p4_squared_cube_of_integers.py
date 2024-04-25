@@ -11,3 +11,5 @@ def squared_cube():
                 with open("double.txt","a") as squared_output_file:
                     squared_output_file.write(str(square)+"\n")
 #add a method that finds the cube of the inetgers
+            else:
+                cubed = line **3
