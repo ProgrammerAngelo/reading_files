@@ -16,7 +16,7 @@ while proceed:
     line = input(BRIGHT_CYAN + BACKGROUND_BLACK + "\nEnter line: \n" + RESET)
     break_line = line+("\n")
 #add a method for looping text
-    with open("my_life.txt", "a") as my_life_output:
+    with open("mylife.txt", "a") as my_life_output:
         my_life_output.write(break_line)
 #add an input for lines
         while proceed:
