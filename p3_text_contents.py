@@ -3,9 +3,9 @@
 proceed = True
 while proceed:
     line = input("Enter line: ")
-    break_line = line + ("\n")
+    break_line = line+("\n")
 #add a method for looping text
-    with open("my_life.txt") as my_life_output:
+    with open("my_life.txt", "a") as my_life_output:
         my_life_output.write(break_line)
 #add an input for lines
         while proceed:
