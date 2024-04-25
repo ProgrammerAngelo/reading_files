@@ -17,4 +17,14 @@ def find_highest_GWA(path):
         return students_highest_GWA, highest_GWA
 
 key, value = find_highest_GWA(path)
-print(f"{key}Has a Highest GWA with the value of{value}")
+# Print the ASCII art with color
+from pyfiglet import Figlet
+font = Figlet(font='big')
+font_text = Figlet(font="small")
+print("\033[1;0m")
+print(font.renderText(f"{key}\033\n"))
+print("\033[1;93m" + font_text.renderText("Has the highest GWA with:\n"))
+print("\033[0m")
+print("\033[1;34m" + font.renderText(f"{value}"))
+print("\033[0m")
+# Print the ASCII art with color
