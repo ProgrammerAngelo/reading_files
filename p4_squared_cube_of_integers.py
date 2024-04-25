@@ -15,3 +15,4 @@ def squared_cube():
                 cubed = line **3
                 with open("triple.txt","a") as cubed_output_file:
                     cubed_output_file.write(str(cubed)+"\n")
+squared_cube()
