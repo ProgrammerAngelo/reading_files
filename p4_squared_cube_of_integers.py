@@ -5,6 +5,7 @@ def squared_cube():
     with open("integers.txt","r") as number_source:
         for line in number_source:
             line = int(line)
-#add a method that reads the txt as number source
+            if line % 2 == 0:
+                square = line **2
 #add a method that finds the squared of the inetgers
 #add a method that finds the cube of the inetgers
