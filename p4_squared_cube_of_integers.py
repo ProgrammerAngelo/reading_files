@@ -5,7 +5,9 @@ def squared_cube():
     with open("integers.txt","r") as number_source:
         for line in number_source:
             line = int(line)
+#add a method that finds the squared of the inetgers
             if line % 2 == 0:
                 square = line **2
-#add a method that finds the squared of the inetgers
+                with open("double.txt","a") as squared_output_file:
+                    squared_output_file.write(str(square)+"\n")
 #add a method that finds the cube of the inetgers
