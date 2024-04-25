@@ -9,3 +9,9 @@ def find_highest_GWA(path):
         highest_GWA = None
         students_highest_GWA = None
 #add a method for printing highest GWA
+        for key, value in txt_data.items():
+            decimal_value = float(value)
+            if highest_GWA is None or decimal_value > float(highest_GWA):
+                students_highest_GWA = key
+                highest_GWA = value
+        return students_highest_GWA, highest_GWA
