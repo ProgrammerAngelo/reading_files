@@ -27,4 +27,3 @@ print("\033[1;93m" + font_text.renderText("Has the highest GWA with:\n"))
 print("\033[0m")
 print("\033[1;34m" + font.renderText(f"{value}"))
 print("\033[0m")
-# Print the ASCII art with color
