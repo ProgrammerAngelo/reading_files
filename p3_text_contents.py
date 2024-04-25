@@ -8,4 +8,6 @@ while proceed:
     with open("my_life.txt") as my_life_output:
         my_life_output.write(break_line)
 #add an input for lines
+        while proceed:
+            repeat = input("Are there any more lines y/n? \n")
 #add a method that ask the user y or n
