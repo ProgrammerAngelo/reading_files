@@ -13,3 +13,5 @@ def squared_cube():
 #add a method that finds the cube of the inetgers
             else:
                 cubed = line **3
+                with open("triple.txt","a") as cubed_output_file:
+                    cubed_output_file.write(str(cubed)+"\n")
